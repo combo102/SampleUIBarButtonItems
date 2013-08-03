@@ -8,7 +8,7 @@ Qiita - ナビゲーションバーに UIBarButtonItem を2つ並べる
 ナビゲーションバーの左側を別の用途で使いたかった為、  
 右側に UIBarButtonItem を2つ並べる。
 
-##適用方法
+##実装方法
 
 ```objc:ViewController.m
 UIBarButtonItem *searchBtn = [[UIBarButtonItem alloc]
