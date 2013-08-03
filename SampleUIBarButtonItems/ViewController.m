@@ -17,13 +17,50 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    [self buildNavigationBar];
+    [self buildRightBarButtonItems];
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+
+#pragma mark -
+#pragma mark NavigationBar
+
+/**
+ * ナビゲーションバー
+ */
+- (void)buildNavigationBar
+{
+    self.navigationController.navigationBar.tintColor = [UIColor darkGrayColor];
+}
+
+#pragma mark -
+#pragma mark rightBarButtonItems
+
+/**
+ * 右側のボタン
+ */
+- (void)buildRightBarButtonItems
+{
+    UIBarButtonItem *searchBtn = [[UIBarButtonItem alloc]
+    initWithBarButtonSystemItem:UIBarButtonSystemItemSearch
+    target:self
+    action:@selector(eventSearchBtn:)];
+    searchBtn.tintColor = [UIColor redColor];
+    
+    UIBarButtonItem *refreshBtn = [[UIBarButtonItem alloc]
+    initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh
+    target:self
+    action:@selector(eventRefreshBtn:)];
+    refreshBtn.tintColor = [UIColor redColor];
+    
+    self.navigationItem.rightBarButtonItems =
+    [NSArray arrayWithObjects:searchBtn, refreshBtn, nil];
 }
 
 @end
