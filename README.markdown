@@ -1,3 +1,8 @@
+Qiita - ナビゲーションバーに UIBarButtonItem を2つ並べる  
+[http://qiita.com/haruhatahiko/items/2b1facc940fbffb68ee6](http://qiita.com/haruhatahiko/items/2b1facc940fbffb68ee6)
+
+- - -
+
 ![Qiita_SampleUIBarButtonItems.png](https://qiita-image-store.s3.amazonaws.com/0/431/e1a76223-c25e-2042-9005-4ead43156431.png)
 
 ナビゲーションバーの左側を別の用途で使いたかった為、  
